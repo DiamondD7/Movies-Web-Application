@@ -16,11 +16,30 @@ namespace MoviesWeb.Controllers
         {
             _context = context;
         }
+
+        //GET
         public IActionResult Index()
         {
             //Passing movieModels to the view to show the list of data within the db
             IEnumerable<MovieModel> movieModels = _context.Order;
             return View(movieModels);
+        }
+
+        //GET
+        public IActionResult Create()
+        {
+            
+            return View();
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(MovieModel movieModel)
+        {
+            _context.Order.Add(movieModel);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
     }
 }
