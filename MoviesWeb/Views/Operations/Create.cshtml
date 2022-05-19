@@ -1,0 +1,23 @@
+﻿@model MovieModel
+
+<form method="post" class="m-3 p-2">
+    <div>
+        <label>Movie Title</label>
+        <input asp-for="MovieName" class="form-control" placeholder="Title..." />
+    </div>
+    <div>
+        <label>Description</label>
+        <input asp-for="MovieDescription" class="form-control" placeholder="Description..." />
+    </div>
+    <div>
+        <label>Released Date</label>
+        <input asp-for="ReleasedDate" type="date" class="form-control" placeholder="MM/DD/YYYY" />
+    </div>
+    <div>
+        <label>Price</label>
+        <input asp-for="MoviePrice" type="number" class="form-control" placeholder="$NZD" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button class="btn btn-light" asp-area="" asp-controller="Operations" asp-action="Index">Cancel</button>
+</form>
