@@ -1,4 +1,28 @@
-﻿
+﻿@model IEnumerable<MovieModel>
+
 <h2>This is the Business Side of the website</h2>
 <p>This is the side where the workers/employees will create, edit or delete their products, depending on their availability(SOH)</p>
 
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Released Date</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var movie in Model)
+            {
+        <tr>
+            <td>@movie.Id</td>
+            <td>@movie.MovieName</td>
+            <td>@movie.MovieDescription</td>
+            <td>@movie.ReleasedDate</td>
+            <td>@movie.MoviePrice</td>
+        </tr>
+            }
+    </tbody>
+</table>
