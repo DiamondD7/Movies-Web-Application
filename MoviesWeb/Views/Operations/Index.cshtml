@@ -14,15 +14,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var movie in Model)
-            {
-        <tr>
-            <td>@movie.Id</td>
-            <td>@movie.MovieName</td>
-            <td>@movie.MovieDescription</td>
-            <td>@movie.ReleasedDate</td>
-            <td>@movie.MoviePrice</td>
-        </tr>
-            }
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.MovieName</td>
+                <td>@movie.MovieDescription</td>
+                <td>@movie.ReleasedDate</td>
+                <td>@movie.MoviePrice</td>
+            </tr>
+        }
     </tbody>
 </table>
