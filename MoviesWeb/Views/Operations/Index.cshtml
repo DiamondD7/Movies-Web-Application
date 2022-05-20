@@ -11,6 +11,8 @@
             <th>Description</th>
             <th>Released Date (YYYY-MM-DD)</th>
             <th>Price (NZD)</th>
+            <th></th>
+            <th></th>   
         </tr>
     </thead>
     <tbody>
@@ -22,6 +24,8 @@
                 <td>@movie.MovieDescription</td>
                 <td>@movie.ReleasedDate</td>
                 <td>$@movie.MoviePrice</td>
+                <td><a class="btn btn-danger p-1 text-white" style="width:100%">Delete</a></td>
+                <td><a class="btn btn-light pr-3 pl-3" style="width:100%">Edit</a></td>
             </tr>
         }
     </tbody>
