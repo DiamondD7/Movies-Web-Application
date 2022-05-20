@@ -42,15 +42,32 @@ namespace MoviesWeb.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //GET
         public IActionResult Edit(int? id)
         {
             var find = _context.Order.Find(id);
             return View(find);
         }
 
+        //EDIT POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit(MovieModel movie)
         {
             _context.Order.Update(movie);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var find = _context.Order.Find(id);
+            return View(find);
+        }
+
+        public IActionResult Delete(MovieModel movies)
+        {
+            _context.Order.Remove(movies);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
