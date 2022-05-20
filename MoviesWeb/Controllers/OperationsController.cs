@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MoviesWeb.Data;
 using MoviesWeb.Models;
 using System;
@@ -10,6 +11,7 @@ namespace MoviesWeb.Controllers
 {
     public class OperationsController : Controller
     {
+
         //using this to save the data from the DbContext
         private readonly MovieDbContext _context;
         public OperationsController(MovieDbContext context)
