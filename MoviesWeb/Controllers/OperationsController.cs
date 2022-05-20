@@ -41,5 +41,18 @@ namespace MoviesWeb.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Edit(int? id)
+        {
+            var find = _context.Order.Find(id);
+            return View(find);
+        }
+
+        public IActionResult Edit(MovieModel movie)
+        {
+            _context.Order.Update(movie);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
