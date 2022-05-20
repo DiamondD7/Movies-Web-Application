@@ -65,11 +65,14 @@ namespace MoviesWeb.Controllers
             return View(find);
         }
 
-        public IActionResult Delete(MovieModel movies)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(MovieModel mov)
         {
-            _context.Order.Remove(movies);
+            _context.Order.Remove(mov);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

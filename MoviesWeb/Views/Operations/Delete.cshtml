@@ -2,9 +2,15 @@
 
 <h2>Are you sure you want to Delete?</h2>
 <form method="post">
-    <label>Title: @Model.MovieName</label>
-    <label>Released Date: @Model.ReleasedDate</label>
-    <label>Price: @Model.MoviePrice</label>
+    <div>
+        <label>Title: @Model.MovieName</label>
+    </div>
+    <div>
+        <label>Released Date: @Model.ReleasedDate</label>
+    </div>
+    <div>
+        <label>Price: @Model.MoviePrice</label>
+    </div>
 
     <button type="submit" class="btn btn-danger mt-3 p-1">Delete</button>
     <button class="btn btn-light mt-3 p-1" asp-area="" asp-controller="Operations" asp-action="Index">Cancel</button>

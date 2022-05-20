@@ -24,7 +24,7 @@
                 <td>@movie.MovieDescription</td>
                 <td>@movie.ReleasedDate</td>
                 <td>$@movie.MoviePrice</td>
-                <td><a class="btn btn-danger p-1 text-white" style="width:100%" asp-area="" asp-controller="Operations" asp-action="Delete">Delete</a></td>
+                <td><a class="btn btn-danger p-1 text-white" style="width:100%" asp-area="" asp-controller="Operations" asp-action="Delete" asp-route-Id="@movie.Id">Delete</a></td>
                 <td><a class="btn btn-light pr-3 pl-3" style="width:100%" asp-area="" asp-controller="Operations" asp-action="Edit" asp-route-Id="@movie.Id">Edit</a></td>
             </tr>
         }
