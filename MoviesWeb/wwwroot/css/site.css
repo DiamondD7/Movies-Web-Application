@@ -73,14 +73,22 @@ body {
 
 /*------------------------------------------------------------------Custom CSS---------------------------------------------------------*/
 
-.image-div {
-    position: absolute;
-}
-.image-poster-joker {
-    
-    height: 50vh;
+.image-div{
+    display:flex;
+    position:relative;
+    justify-content:center;
+    align-content:center;
 }
 
-.image-poster-uncharted{
-    height: 49vh;
+.image-poster-joker {
+    position:absolute;
+    left:200px;
+    height: 43vh;
+
+    margin-top:12px;
+}
+
+.image-poster-uncharted {
+    position:absolute;
+    height: 45vh;
 }
