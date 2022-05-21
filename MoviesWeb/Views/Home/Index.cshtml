@@ -15,10 +15,11 @@
 </div>
 <div class="underline"></div>
 
-<div class="M-List">
+<div>
     @foreach (var mov in Model)
     {
         var imageSource = "/images/Movies/" + mov.MovieName + ".jpg";
+    <div class="M-List">
         <div>
             <img src="@imageSource" style="width:260px" />
         </div>
@@ -27,6 +28,8 @@
             <label>Title: @mov.MovieName</label>
             <p>@mov.MovieDescription</p>
         </div>
+    </div>
+        
     }
 
 </div>
