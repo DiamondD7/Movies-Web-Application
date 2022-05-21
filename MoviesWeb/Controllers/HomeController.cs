@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MoviesWeb.Data;
 using MoviesWeb.Models;
 using System;
 using System.Collections.Generic;
@@ -11,16 +12,24 @@ namespace MoviesWeb.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly MovieDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(MovieDbContext context)
+        {
+            _context = context;
+        }
+       /* private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger, MovieDbContext context)
         {
             _logger = logger;
-        }
+            _context = context;
+        }*/
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<MovieModel> movieModels = _context.Order;
+            return View(movieModels);
         }
 
         public IActionResult Privacy()

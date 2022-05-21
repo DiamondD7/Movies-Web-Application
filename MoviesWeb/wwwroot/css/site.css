@@ -73,6 +73,7 @@ body {
 
 /*------------------------------------------------------------------Custom CSS---------------------------------------------------------*/
 
+
 .image-div{
     display:flex;
     position:relative;
@@ -82,24 +83,20 @@ body {
 
 
 .image-poster-joker {
-    position:absolute;
-    left:220px;
+    left: 40px;
     height: 43vh;
-
-    margin-top:12px;
+    margin-top: 12px;
 }
 
 
-.image-poster-bohemian{
-    position:absolute;
-    right:60px;
-    height:41vh;
-
-    margin-top:22px;
+.image-poster-bohemian {
+    right: 60px;
+    height: 41vh;
+    margin-top: 22px;
 }
 
 .image-poster-spider{
-    position:absolute;
+
     right:220px;
     height:43vh;
 
@@ -107,12 +104,12 @@ body {
 }
 
 .image-poster-uncharted {
-    position:absolute;
+
     height: 45vh;
 }
 
 .image-poster-avatar {
-    position: absolute;
+
     left: 60px;
     height: 41vh;
     margin-top: 22px;
@@ -122,6 +119,5 @@ body {
 
 
 .underline{
-    display: inline-block;
-    border-bottom:3px solid black;
+    border-bottom:1px solid black;
 }

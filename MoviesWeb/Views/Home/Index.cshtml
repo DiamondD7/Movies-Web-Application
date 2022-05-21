@@ -1,12 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<MovieModel>;
+
 <div class="image-div">
+
     <img class="image-poster-avatar" src="~/images/avatar-poster.jpg" />
     <img class="image-poster-joker" src="~/images/joker-poster.jpg" />
-    <img class="image-poster-bohemian" src="~/images/bohemian-poster.jpg" />
-    <img class="image-poster-spider" src="~/images/spiderman-poster.jpg" />
     <img class="image-poster-uncharted" src="~/images/uncharted-poster.jpg" />
-</div>
+    <img class="image-poster-spider" src="~/images/spiderman-poster.jpg" />
+    <img class="image-poster-bohemian" src="~/images/bohemian-poster.jpg" />
 
+
+</div>
 <div class="underline"></div>
+
+<div class="M-List">
+    @foreach (var mov in Model)
+    {
+        var imageSource = "/images/Movies/" + mov.MovieName + ".jpg";
+        <div>
+            <img src="@imageSource" style="width:260px" />
+        </div>
+        <label>Title: @mov.MovieName</label>
+        <p>@mov.MovieDescription</p>
+    }
+
+</div>
