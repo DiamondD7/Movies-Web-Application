@@ -73,14 +73,14 @@ body {
 
 /*------------------------------------------------------------------Custom CSS---------------------------------------------------------*/
 
-.image-poster{
-    height:500px;
-    width:500px;
+.image-div {
+    position: absolute;
+}
+.image-poster-joker {
+    
+    height: 50vh;
 }
 
-/*.image-div{
-    background-image:url(/images/joker-poster.jpg);
-    height:100vh;
-    background-size:cover;
+.image-poster-uncharted{
+    height: 49vh;
 }
-*/
