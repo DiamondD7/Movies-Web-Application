@@ -79,40 +79,39 @@ body {
     position:relative;
     justify-content:center;
     align-content:center;
+
+    margin-top:50px;
 }
 
 
 .image-poster-joker {
     left: 40px;
     height: 43vh;
-    margin-top: 12px;
+    margin-top: 33px;
 }
 
 
 .image-poster-bohemian {
     right: 60px;
     height: 41vh;
-    margin-top: 22px;
+    margin-top: 43px;
 }
 
-.image-poster-spider{
-
-    right:220px;
-    height:43vh;
-
-    margin-top:12px;
+.image-poster-spider {
+    right: 220px;
+    height: 43vh;
+    margin-top: 33px;
 }
 
 .image-poster-uncharted {
 
-    height: 45vh;
+    height: 50vh;
 }
 
 .image-poster-avatar {
-
     left: 60px;
     height: 41vh;
-    margin-top: 22px;
+    margin-top: 43px;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
