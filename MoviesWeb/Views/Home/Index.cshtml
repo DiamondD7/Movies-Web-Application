@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model IEnumerable<MovieModel>;
+
 
 <div class="image-div">
 
@@ -16,23 +16,3 @@
 <div class="underline"></div>
 
 
-
-@*THE CODE BELOW IS FOR ANOTHER PAGE WHERE END USERS CAN ACCESS FULL LISTS OF MOVIES.*@
-<div>
-    @foreach (var mov in Model)
-    {
-        var imageSource = "/images/Movies/" + mov.MovieName + ".jpg";
-    <div class="M-List">
-        <div>
-            <img src="@imageSource" style="width:260px" />
-        </div>
-        <div class="M-Summary">
-
-            <label>Title: @mov.MovieName</label>
-            <p>@mov.MovieDescription</p>
-        </div>
-    </div>
-        
-    }
-
-</div>
