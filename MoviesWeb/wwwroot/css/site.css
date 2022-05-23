@@ -141,7 +141,7 @@ body {
     display: inline-block;
     font-family: 'DM Sans', sans-serif;
     font-size: 50px;
-    color: #457187;
+    color: #3E3D3B;
     margin-top: 140px;
     margin-bottom: 35px;
 }
@@ -151,11 +151,11 @@ body {
     gap:130px;
 }
 
-p{
+.p{
     font-family: 'DM Sans', sans-serif;
-    font-size:18px;
+    font-size:19px;
     color:#3E3D3B;
-
+    line-height:1.5;
     width:50%;
     
 }
