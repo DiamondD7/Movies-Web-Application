@@ -159,3 +159,7 @@ body {
     width:50%;
     
 }
+
+.image{
+    box-shadow:rgba(0,0,0,0.12) 8px 8px;
+}
