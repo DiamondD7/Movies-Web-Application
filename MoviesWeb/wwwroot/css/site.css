@@ -140,9 +140,22 @@ body {
 .Index-Main-Header {
     display: inline-block;
     font-family: 'DM Sans', sans-serif;
-    color: #3E3D3B;
-    background-color: #F0EBE7;
-    margin-top: 120px;
-    padding: 30px;
-    border-radius: 25px;
+    font-size: 50px;
+    color: #457187;
+    margin-top: 140px;
+    margin-bottom: 35px;
+}
+
+.family-div{
+    display:flex;
+    gap:130px;
+}
+
+p{
+    font-family: 'DM Sans', sans-serif;
+    font-size:18px;
+    color:#3E3D3B;
+
+    width:50%;
+    
 }
