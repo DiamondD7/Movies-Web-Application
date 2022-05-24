@@ -196,3 +196,11 @@ body {
     border: 1.3px solid rgba(0,0,0,0.3);
     padding: 20px 40px 20px 40px;
 }
+
+.Category-Header {
+    text-align: center;
+    font-family: 'DM Sans',sans-serif;
+    color: #3E3D3B;
+
+    margin-top:50px;
+}
