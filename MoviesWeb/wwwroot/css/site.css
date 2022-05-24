@@ -176,9 +176,10 @@ body {
     gap:200px;
 }
 
-.List{
-    list-style:none;
-    font-family:'DM Sans',sans-serif;
+.List {
+    list-style: none;
+    font-family: 'DM Sans',sans-serif;
+    font-size:30px;
 }
 
 .Fitness {
