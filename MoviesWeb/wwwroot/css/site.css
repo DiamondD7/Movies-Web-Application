@@ -142,7 +142,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 50px;
     color: #3E3D3B;
-    margin-top: 140px;
+    margin-top: 160px;
     margin-bottom: 35px;
 }
 
@@ -182,19 +182,43 @@ body {
     font-size:30px;
 }
 
+
 .Fitness {
-    border: 1.3px solid rgba(0,0,0,0.3);
-    padding:20px 40px 20px 40px;
+    border-bottom: 1.3px solid #D5D5D5;
+    padding: 20px 40px 20px 40px;
+    
+}
+
+.Fitness:hover {
+    /*background-color: #EBE8E8;*/
+    border-color:rgba(0,0,0,0.3);
+    cursor:pointer
+}
+
+.Fitness:visited{
+    color: #3E3D3B;
 }
 
 .Entertainment {
-    border: 1.3px solid rgba(0,0,0,0.3);
+    border-bottom: 1.3px solid #D5D5D5;
     padding: 20px 40px 20px 40px;
+    color: #3E3D3B;
+}
+
+.Entertainment:hover {
+    border-color:rgba(0,0,0,0.3);
+    cursor:pointer
 }
 
 .Education {
-    border: 1.3px solid rgba(0,0,0,0.3);
+    border-bottom: 1.3px solid #D5D5D5;
     padding: 20px 40px 20px 40px;
+    color: #3E3D3B;
+}
+
+.Education:hover {
+    border-color:rgba(0,0,0,0.3);
+    cursor:pointer
 }
 
 .Category-Header {
