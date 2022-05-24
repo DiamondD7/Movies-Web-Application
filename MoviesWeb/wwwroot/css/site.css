@@ -195,8 +195,9 @@ body {
     cursor:pointer
 }
 
-.Fitness:visited{
+.Fitness:link, .Fitness:visited{
     color: #3E3D3B;
+    text-decoration:none;
 }
 
 .Entertainment {
@@ -210,6 +211,11 @@ body {
     cursor:pointer
 }
 
+.Entertainment:link, .Entertainment:visited {
+    color: #3E3D3B;
+    text-decoration: none;
+}
+
 .Education {
     border-bottom: 1.3px solid #D5D5D5;
     padding: 20px 40px 20px 40px;
@@ -219,6 +225,11 @@ body {
 .Education:hover {
     border-color:rgba(0,0,0,0.3);
     cursor:pointer
+}
+
+.Education:link, .Education:visited {
+    color: #3E3D3B;
+    text-decoration: none;
 }
 
 .Category-Header {
