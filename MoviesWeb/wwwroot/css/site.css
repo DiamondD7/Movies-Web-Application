@@ -104,7 +104,6 @@ body {
 }
 
 .image-poster-uncharted {
-
     height: 50vh;
 }
 
@@ -238,4 +237,5 @@ body {
     color: #3E3D3B;
 
     margin-top:50px;
+    padding-right:28px;
 }
