@@ -4,7 +4,7 @@
     display:grid;
     grid-template-columns:repeat(3,1fr);
 
-    margin-top:150px;
+    margin-top:100px;
 }
 
 .btn-search{
@@ -34,4 +34,29 @@
 
 .frm-div{
     margin-top:50px;
+}
+
+.genre-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 20px;
+    color: #3E3D3B;
+    text-align:center;
+
+    margin-top:70px;
+}
+
+.arrow-down{
+    height:30px;
+    width:20px;
+}
+
+.genre{
+    margin-right:100px;
+}
+
+.filter{
+    margin-right:100px;
 }
