@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MoviesWeb.Data;
+using MoviesWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,16 @@ namespace MoviesWeb.Controllers
 {
     public class EntertainmentController : Controller
     {
+        private readonly MovieDbContext _context;
+        public EntertainmentController(MovieDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<MovieModel> movie = _context.Order;
+            return View(movie);
         }
     }
 }

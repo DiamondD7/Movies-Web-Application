@@ -1,2 +1,12 @@
-﻿
+﻿@model IEnumerable<MovieModel>
 <h1>This is the entertainment page</h1>
+
+
+<div class="Movie-List">
+    @foreach (var mov in Model)
+    {
+        var imagePath = "/images/Movies/" + mov.MovieName + ".jpg";
+
+        <img src="@imagePath" style="width:260px"/>
+    }
+</div>
