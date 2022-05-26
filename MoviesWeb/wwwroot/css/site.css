@@ -235,7 +235,9 @@ body {
 
 .Category-Header {
     text-align: center;
+    letter-spacing:0.5px;
     font-family: 'DM Sans',sans-serif;
+    font-size:36px;
     color: #3E3D3B;
 
     margin-top:80px;
