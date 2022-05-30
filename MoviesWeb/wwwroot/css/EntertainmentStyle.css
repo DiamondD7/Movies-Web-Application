@@ -99,6 +99,11 @@
     z-index:6;
 }
 
+.genre-list{
+    border:none;
+    background-color:white;
+}
+
 .btn-close{
     position:absolute;
     border:none;
