@@ -2,6 +2,7 @@
 
 const modal = document.querySelector('.genre-modal');
 const overlay = document.querySelector('.overlay');
+const genreList = document.querySelectorAll('.genre-list');
 
 document.querySelector('.genre').addEventListener('click', function () {
 
@@ -16,3 +17,8 @@ const closeModal = function () {
 }
 
 document.querySelector('.overlay').addEventListener('click', closeModal);
+
+for (let i = 0; i < genreList.length; i++) {
+
+    genreList[i].addEventListener('click', closeModal);
+}
