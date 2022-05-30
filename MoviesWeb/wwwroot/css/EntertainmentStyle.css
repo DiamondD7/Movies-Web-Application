@@ -66,8 +66,15 @@
 }
 
 .modal-ul{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap:30px;
+    row-gap:20px;
     list-style:none;
-    display:inline block;
+    font-size:18px;
+
+    padding-top:20px;
+    
 }
 
 .overlay{
@@ -87,8 +94,17 @@
     left: 35%;
     width: 25%;
     background-color: white;
-    padding: 6rem;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
     z-index:6;
+}
+
+.btn-close{
+    position:absolute;
+    border:none;
+    background-color:white;
+    color:red;
+    top:3%;
+    left:95%;
+    z-index:7;
 }
