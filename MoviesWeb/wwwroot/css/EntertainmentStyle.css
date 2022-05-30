@@ -60,3 +60,7 @@
 .filter{
     margin-right:100px;
 }
+
+.hidden{
+    display: none;
+}
