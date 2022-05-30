@@ -23,8 +23,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
     </button>
-</div>
 
+</div>
 <div class="genre-modal hidden">
     <ul class="modal-ul">
         <li><a>Action</a></li>
@@ -33,7 +33,6 @@
         <li><a>Horror</a></li>
     </ul>
 </div>
-
 <div class="Movie-List">
     @foreach (var mov in Model)
     {
@@ -42,3 +41,5 @@
         <img src="@imagePath" style="width:260px" />
     }
 </div>
+
+<div class="overlay hidden"></div>
