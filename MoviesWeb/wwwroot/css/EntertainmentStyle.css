@@ -158,3 +158,10 @@
     backdrop-filter: blur(3px);
     z-index: 5;
 }
+
+.btnz {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    z-index: 7;
+}

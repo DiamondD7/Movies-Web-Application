@@ -26,29 +26,31 @@
 
 </div>
 <div class="genre-modal hidden">
-    <form method="post">
-        <ul class="modal-ul">
-            <li><button class="genre-list">Action</button></li>
-            <li><button class="genre-list">Adventure</button></li>
-            <li><button class="genre-list">Comedy</button></li>
-            <li><button class="genre-list">Horror</button></li>
-            <li><button class="genre-list">Thriller</button></li>
-            <li><button class="genre-list">Sci-Fi</button></li>
-            <li><button class="genre-list">Documentary</button></li>
-            <li><button class="genre-list">Bio</button></li>
-        </ul>
-        <button class="btn btn-primary" type="submit">Confirm</button>
-    </form>
+
+    <ul class="modal-ul">
+        <li><button class="genre-list">Action</button></li>
+        <li><button class="genre-list">Adventure</button></li>
+        <li><button class="genre-list">Comedy</button></li>
+        <li><button class="genre-list">Horror</button></li>
+        <li><button class="genre-list">Thriller</button></li>
+        <li><button class="genre-list">Sci-Fi</button></li>
+        <li><button class="genre-list">Documentary</button></li>
+        <li><button class="genre-list">Bio</button></li>
+    </ul>
+
 </div>
 
 <div class="filter-modal hidden">
-    <ul class="filter-ul">
-        <li><input type="checkbox" />Popular</li>
-        <li><input type="checkbox" />New Movies</li>
-        <li><input type="checkbox" />Biography</li>
-        <li><input type="checkbox" />Educational</li>
-        <li><input type="checkbox" />Fitness</li>
-    </ul>
+    <form method="post">
+        <ul class="filter-ul">
+            <li><input type="checkbox" />Popular</li>
+            <li><input type="checkbox" />New Movies</li>
+            <li><input type="checkbox" />Biography</li>
+            <li><input type="checkbox" />Educational</li>
+            <li><input type="checkbox" />Fitness</li>
+        </ul>
+        <button class="btnz btn btn-primary" type="submit">Confirm</button>
+    </form>
 </div>
 <div class="Movie-List">
     @foreach (var mov in Model)
