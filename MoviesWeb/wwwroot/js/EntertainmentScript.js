@@ -10,7 +10,6 @@ const closeModal = function () {
 }
 
 
-
 document.querySelector('.genre').addEventListener('click', function () {
 
     modal.classList.remove('hidden');
@@ -23,3 +22,11 @@ document.querySelector('.overlay').addEventListener('click', closeModal);
 for (let i = 0; i < genreList.length; i++) {
     genreList[i].addEventListener('click', closeModal);
 }
+
+
+const filterModal = document.querySelector('.filter-modal');
+
+document.querySelector('.filter').addEventListener('click', function () {
+    filterModal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+})
