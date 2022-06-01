@@ -138,8 +138,8 @@
 .filter-modal {
     position: absolute;
     top: 39%;
-    left: 33%;
-    width: 30%;
+    left: 30%;
+    width: 35%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
