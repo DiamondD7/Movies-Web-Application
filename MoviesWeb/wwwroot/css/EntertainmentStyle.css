@@ -106,6 +106,12 @@
     background-color:white;
 }
 
+.genre-list:hover{
+    /*text-decoration:underline;*/
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.3);
+    border-radius:5px;
+}
+
 /*.btn-close{
     position:absolute;
     border:none;
