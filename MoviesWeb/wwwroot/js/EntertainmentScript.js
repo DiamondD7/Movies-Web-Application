@@ -30,3 +30,9 @@ document.querySelector('.filter').addEventListener('click', function () {
     filterModal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 })
+
+
+
+document.querySelector('.overlay').addEventListener('click', function () {
+    filterModal.classList.add('hidden');
+})
