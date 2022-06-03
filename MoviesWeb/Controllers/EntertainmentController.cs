@@ -23,9 +23,6 @@ namespace MoviesWeb.Controllers
             return View(genreSelected);
         }
 
-        public IActionResult Genre(MovieModel movieModel)
-        {
-            return View(movieModel.MovieType);
-        }
+    
     }
 }
