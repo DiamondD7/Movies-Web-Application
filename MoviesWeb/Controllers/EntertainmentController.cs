@@ -19,7 +19,13 @@ namespace MoviesWeb.Controllers
         public IActionResult Index()
         {
             IEnumerable<MovieModel> movie = _context.Order;
-            return View(movie);
+            var genreSelected = movie.Where(x => x.MovieType == "Horror");
+            return View(genreSelected);
+        }
+
+        public IActionResult Genre(MovieModel movieModel)
+        {
+            return View(movieModel.MovieType);
         }
     }
 }
