@@ -50,6 +50,11 @@ namespace MoviesWeb.Controllers
             {
                 movies.MovieType = "Bio";
             }
+            else
+            {
+                IEnumerable<MovieModel> mov = _context.Order;
+                return View(mov);
+            }
             IEnumerable<MovieModel> movie = _context.Order;
             var genreSelected = movie.Where(c => c.MovieType == movies.MovieType);
             return View(genreSelected);
