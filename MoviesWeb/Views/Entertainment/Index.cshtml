@@ -10,7 +10,6 @@
         </button>
     </form>
 </div>
-
 <div class="genre-div">
     <button class="filter">
         Filter <svg xmlns="http://www.w3.org/2000/svg" class="arrow-down" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -24,20 +23,22 @@
     </button>
 
 </div>
-<div class="genre-modal hidden">
+<form method="post">
+    <div class="genre-modal hidden">
 
-    <ul class="modal-ul">
-        <li><button class="genre-list">Action</button></li>
-        <li><button class="genre-list">Adventure</button></li>
-        <li><button class="genre-list">Comedy</button></li>
-        <li><button asp-controller="Entertainment" asp-action="" value="Horror" class="genre-list">Horror</button></li>
-        <li><button class="genre-list">Thriller</button></li>
-        <li><button class="genre-list">Sci-Fi</button></li>
-        <li><button class="genre-list">Documentary</button></li>
-        <li><button class="genre-list">Bio</button></li>
-    </ul>
+        <ul class="modal-ul">
+            <li><button class="genre-list" value="Action">Action</button></li>
+            <li><button class="genre-list">Adventure</button></li>
+            <li><button class="genre-list">Comedy</button></li>
+            <li><input type="submit" name="button" value="Horror" class="btn btn-default" /></li>
+            <li><button class="genre-list">Thriller</button></li>
+            <li><button class="genre-list">Sci-Fi</button></li>
+            <li><button class="genre-list">Documentary</button></li>
+            <li><button class="genre-list">Bio</button></li>
+        </ul>
 
-</div>
+    </div>
+</form>
 
 <div class="filter-modal hidden">
     <form method="post">
