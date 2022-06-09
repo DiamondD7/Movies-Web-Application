@@ -21,7 +21,6 @@ document.querySelector('.genre').addEventListener('click', function () {
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         closeModal()
-
     }
 })
 
