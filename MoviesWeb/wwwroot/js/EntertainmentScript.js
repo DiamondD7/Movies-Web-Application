@@ -27,9 +27,9 @@ document.addEventListener('keydown', function (e) {
 
 document.querySelector('.overlay').addEventListener('click', closeModal);
 
-for (let i = 0; i < genreList.length; i++) {
+/*for (let i = 0; i < genreList.length; i++) {
     genreList[i].addEventListener('click', closeModal);
-}
+}*/
 
 
 
