@@ -18,37 +18,9 @@ namespace MoviesWeb.Controllers
 
         public IActionResult Index(MovieModel movies, string button)
         {
-            if (button == "Horror")
+            if (button == CheckString(button))
             {
-                movies.MovieType = "Horror";
-            }
-            else if(button == "Action")
-            {
-                movies.MovieType = "Action";
-            }
-            else if (button == "Adventure")
-            {
-                movies.MovieType = "Adventure";
-            }
-            else if (button == "Comedy")
-            {
-                movies.MovieType = "Comedy";
-            }
-            else if (button == "Thriller")
-            {
-                movies.MovieType = "Thriller";
-            }
-            else if (button == "Sci-Fi")
-            {
-                movies.MovieType = "Sci-Fi";
-            }
-            else if (button == "Documentary")
-            {
-                movies.MovieType = "Documentary";
-            }
-            else if (button == "Bio")
-            {
-                movies.MovieType = "Bio";
+                movies.MovieType = CheckString(button);
             }
             else
             {
@@ -59,19 +31,38 @@ namespace MoviesWeb.Controllers
             var genreSelected = movie.Where(c => c.MovieType == movies.MovieType);
             return View(genreSelected);
         }
-
-
-/*        [HttpPost]
-        public IActionResult Index(MovieModel movieModel, string button, string idk)
+        public string CheckString(string genre)
         {
-
-            if (button == "Horror")
+            if (genre == "Horror")
             {
-                movieModel.MovieType = "Horror";
+                return "Horror";
             }
-            return View(movieModel.MovieType);
-
-        }*/
+            else if (genre == "Action")
+            {
+                return "Action";
+            }
+            else if (genre == "Adventure")
+            {
+                return "Adventure";
+            }
+            else if (genre == "Comedy")
+            {
+                return "Comedy";
+            }
+            else if (genre == "Thriller")
+            {
+                return "Thriller";
+            }
+            else if (genre == "Sci-Fi")
+            {
+                return "Sci-Fi";
+            }
+            else if (genre == "Documentary")
+            {
+                return "Documentary";
+            }
+            return "Bio";
+        }
 
 
     }
