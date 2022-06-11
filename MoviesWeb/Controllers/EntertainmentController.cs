@@ -16,18 +16,22 @@ namespace MoviesWeb.Controllers
 
         public IActionResult Index(MovieModel movies, string button)
         {
+            IEnumerable<MovieModel> movie = _context.Order;
             if (button == CheckString(button))
             {
                 movies.MovieType = CheckString(button);
+                
+                var genreSelected = movie.Where(c => c.MovieType == movies.MovieType);
+                return View(genreSelected);
             }
             else
             {
                 IEnumerable<MovieModel> mov = _context.Order;
                 return View(mov);
             }
-            IEnumerable<MovieModel> movie = _context.Order;
-            var genreSelected = movie.Where(c => c.MovieType == movies.MovieType);
-            return View(genreSelected);
+
+            var movGenre = movie.Select(x => x.MovieType != "Fitness");
+            return View(movGenre);
         }
         public string CheckString(string genre)
         {
