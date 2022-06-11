@@ -1,7 +1,12 @@
-﻿@model Enumerable<MovieModel>
-<div>
+﻿@model IEnumerable<MovieModel>
+
+
+
+
+<div class="Movie-List">
     @foreach(var i in Model)
-            {
-                var imageSource = "/images/"
-            }
+    {
+        var imageSource = "/images/Fitness/" + i.MovieName + ".jpg";
+        <img src="@imageSource" style="width:260px" />
+    }
 </div>
