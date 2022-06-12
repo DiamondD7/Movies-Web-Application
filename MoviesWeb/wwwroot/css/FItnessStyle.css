@@ -1,2 +1,8 @@
 ﻿body {
 }
+
+h1 {
+    color: #3E3D3B;
+    font-family: 'DM Sans',sans-serif;
+    margin-top:80px;
+}
