@@ -28,8 +28,8 @@ namespace MoviesWeb.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<MovieModel> movieModels = _cont
-            return View();
+            IEnumerable<MovieModel> movieModels = _context.Order;
+            return View(movieModels);
         }
 
         public IActionResult Privacy()
