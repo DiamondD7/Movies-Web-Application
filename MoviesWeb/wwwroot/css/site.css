@@ -126,15 +126,15 @@ body {
 
 /*-----------------------------IMAGE EFFECT WHEN HOVER--------------------------------------------*/
 .img {
-    transition: all 0.5s;
+    transition: all 0.9s;
 }
 
 .img:hover {
     position:relative;
-    top:-33px;
-    height: 50vh;
+    top:-60px;
+    height: 55vh;
     z-index: 15;
-    transition: all 0.5s;
+    transition: all 0.9s;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
