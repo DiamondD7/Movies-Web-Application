@@ -20,11 +20,15 @@ namespace MoviesWeb.Controllers
             _logger = logger;
         }
 
-        
+        private readonly MovieDbContext _context;
+        public HomeController(MovieDbContext context)
+        {
+            _context = context;
+        }
 
         public IActionResult Index()
         {
-            IEnumerable<MovieModel> movieModels = 
+            IEnumerable<MovieModel> movieModels = _cont
             return View();
         }
 
