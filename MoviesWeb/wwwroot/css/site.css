@@ -271,11 +271,14 @@ body {
     overflow-y: hidden;
     overflow-x: scroll;
     height: 30vh;
-    gap:80px;
+    gap:60px;
     margin: 10px 0 10px 0;
 
 }
 
-.movies-index::-webkit-scrollbar{
-    
+.h3-title{
+    margin-top:200px;
+}
+
+.movies-index::-webkit-scrollbar {
 }
