@@ -26,14 +26,14 @@
     </ul>
 </div>
 
-<div class="movie-grid">
-    @foreach (var i in Model)
-    {
-        var imageSource = "/images/movies/" + i.MovieName + ".jpg";
-        <div class="movies-index">
-            <a style="width:50px"><img src="@imageSource" style="height:150px"/></a>
-        </div>
-    }
+<div>
+    <div class="movies-index">
+        @foreach (var i in Model)
+        {
+            var imageSource = "/images/movies/" + i.MovieName + ".jpg";
+            <a><img src="@imageSource" style="height:30vh"/></a>
+        }
+    </div>
 </div>
 
 
@@ -43,7 +43,7 @@
 <div class="family-div">
     <p class="family-div p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sed do eiusmod tempor incididunt ut 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sed do eiusmod tempor incididunt ut
     </p>
 
     <img class="family-div image" src="~/images/Family-Popcorn.jpg" style="height:30vh" />

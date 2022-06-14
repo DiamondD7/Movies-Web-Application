@@ -266,14 +266,16 @@ body {
 }
 
 /*---------------------------------INDEX MOVIE GRID---------------------------------------*/
-.movie-grid{
-    display:grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(4 1fr);
-    height:100px;
-    width:100px;
+.movies-index {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 30vh;
+    gap:80px;
+    margin: 10px 0 10px 0;
+
 }
 
-.movies-index{
-    margin: 10px 0 10px 0;
+.movies-index::-webkit-scrollbar{
+    
 }
