@@ -288,7 +288,7 @@ body {
 }
 .movies-index::-webkit-scrollbar-thumb {
     /*background-color: rgba(0,0,0,0.3); */
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
