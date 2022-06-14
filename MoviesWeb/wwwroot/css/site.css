@@ -243,3 +243,11 @@ body {
     margin-top:80px;
     padding-right:28px;
 }
+
+/*-----------------------------IMAGE EFFECT WHEN HOVER--------------------------------------------*/
+
+.img:hover{
+    height: 50vh;
+    z-index: 5;
+    
+}
