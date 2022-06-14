@@ -20,8 +20,11 @@ namespace MoviesWeb.Controllers
             _logger = logger;
         }
 
+        
+
         public IActionResult Index()
         {
+            IEnumerable<MovieModel> movieModels = 
             return View();
         }
 

@@ -1,4 +1,6 @@
-﻿@{
+﻿
+@model IEnumerable<MovieModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -23,6 +25,17 @@
         <li><a href="#" class="Education">Education</a></li>
     </ul>
 </div>
+
+<div>
+    @foreach (var i in Model)
+    {
+        var imageSource = "/images/movies/" + 
+        <div>
+            <a><img /></a>
+        </div>
+    }
+</div>
+
 
 <div>
     <h1 class="Index-Main-Header">Movie night with your family</h1>
