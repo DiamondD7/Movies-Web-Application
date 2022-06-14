@@ -2,135 +2,158 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
 }
 
 
 /*------------------------------------------------------------------Custom CSS---------------------------------------------------------*/
 
 
-.image-div{
-    display:flex;
-    position:relative;
-    justify-content:center;
-    align-content:center;
-
-    margin-top:50px;
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
 }
 
 
 .image-poster-joker {
+    position: relative;
     left: 40px;
     height: 43vh;
     margin-top: 33px;
+    z-index: 10;
 }
 
 
 .image-poster-bohemian {
+    position: relative;
     right: 60px;
     height: 41vh;
     margin-top: 43px;
+    z-index: 9;
 }
 
 .image-poster-spider {
-    right: 220px;
+    position: relative;
+    right: 40px;
     height: 43vh;
     margin-top: 33px;
+    z-index: 10;
 }
 
 .image-poster-uncharted {
+    position: relative;
     height: 50vh;
+    z-index: 11;
 }
 
 .image-poster-avatar {
+    position: relative;
     left: 60px;
     height: 41vh;
     margin-top: 43px;
+    z-index: 9;
+}
+
+/*-----------------------------IMAGE EFFECT WHEN HOVER--------------------------------------------*/
+.img {
+    transition: all 0.5s;
+}
+
+.img:hover {
+    position:relative;
+    top:-33px;
+    height: 50vh;
+    z-index: 15;
+    transition: all 0.5s;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
 
-.underline{
-    border-bottom:1px solid black;
+.underline {
+    border-bottom: 1px solid black;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
-.M-List{
-    display:flex;
-    justify-content:start;
-    align-content:center;
-
-    margin-top:100px;
+.M-List {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    margin-top: 100px;
 }
 
-.M-Summary{
+.M-Summary {
     margin-left: 25px;
 }
 
@@ -145,61 +168,57 @@ body {
     margin-bottom: 35px;
 }
 
-.family-div{
-    display:flex;
-    gap:130px;
+.family-div {
+    display: flex;
+    gap: 130px;
 }
 
-.p{
+.p {
     font-family: 'DM Sans', sans-serif;
-    font-size:19px;
-    color:#3E3D3B;
-    line-height:1.5;
-    width:50%;
-    
+    font-size: 19px;
+    color: #3E3D3B;
+    line-height: 1.5;
+    width: 50%;
 }
 
-.image{
-    box-shadow:rgba(0,0,0,0.12) 8px 8px;
+.image {
+    box-shadow: rgba(0,0,0,0.12) 8px 8px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
 
-.Category-Options{
+.Category-Options {
     display: flex;
     justify-content: space-evenly;
-    align-content:center;
-    
-    margin-top:60px;
-    gap:200px;
+    align-content: center;
+    margin-top: 60px;
+    gap: 200px;
 }
 
 .List {
     list-style: none;
     font-family: 'DM Sans',sans-serif;
-    font-size:30px;
-
-    padding-right:30px;
+    font-size: 30px;
+    padding-right: 30px;
 }
 
 
 .Fitness {
     border-bottom: 1.3px solid #D5D5D5;
     padding: 20px 40px 20px 40px;
-    
 }
 
-.Fitness:hover {
-    /*background-color: #EBE8E8;*/
-    border-color:rgba(0,0,0,0.3);
-    cursor:pointer
-}
+    .Fitness:hover {
+        /*background-color: #EBE8E8;*/
+        border-color: rgba(0,0,0,0.3);
+        cursor: pointer
+    }
 
-.Fitness:link, .Fitness:visited{
-    color: #3E3D3B;
-    text-decoration:none;
-}
+    .Fitness:link, .Fitness:visited {
+        color: #3E3D3B;
+        text-decoration: none;
+    }
 
 .Entertainment {
     border-bottom: 1.3px solid #D5D5D5;
@@ -207,15 +226,15 @@ body {
     color: #3E3D3B;
 }
 
-.Entertainment:hover {
-    border-color:rgba(0,0,0,0.3);
-    cursor:pointer
-}
+    .Entertainment:hover {
+        border-color: rgba(0,0,0,0.3);
+        cursor: pointer
+    }
 
-.Entertainment:link, .Entertainment:visited {
-    color: #3E3D3B;
-    text-decoration: none;
-}
+    .Entertainment:link, .Entertainment:visited {
+        color: #3E3D3B;
+        text-decoration: none;
+    }
 
 .Education {
     border-bottom: 1.3px solid #D5D5D5;
@@ -223,34 +242,22 @@ body {
     color: #3E3D3B;
 }
 
-.Education:hover {
-    border-color:rgba(0,0,0,0.3);
-    cursor:pointer
-}
+    .Education:hover {
+        border-color: rgba(0,0,0,0.3);
+        cursor: pointer
+    }
 
-.Education:link, .Education:visited {
-    color: #3E3D3B;
-    text-decoration: none;
-}
+    .Education:link, .Education:visited {
+        color: #3E3D3B;
+        text-decoration: none;
+    }
 
 .Category-Header {
     text-align: center;
-    letter-spacing:0.5px;
+    letter-spacing: 0.5px;
     font-family: 'DM Sans',sans-serif;
-    font-size:36px;
+    font-size: 36px;
     color: #3E3D3B;
-
-    margin-top:80px;
-    padding-right:28px;
-}
-
-/*-----------------------------IMAGE EFFECT WHEN HOVER--------------------------------------------*/
-.img {
-    transition: all 0.5s;
-}
-
-.img:hover{
-    height: 50vh;
-    z-index: 10;
-    transition: all 0.5s;
+    margin-top: 80px;
+    padding-right: 28px;
 }
