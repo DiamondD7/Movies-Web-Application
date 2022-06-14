@@ -15,17 +15,13 @@ namespace MoviesWeb.Controllers
 
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, MovieDbContext context)
         {
             _logger = logger;
-        }
-
-        private readonly MovieDbContext _context;
-        public HomeController(MovieDbContext context)
-        {
             _context = context;
         }
 
+        private readonly MovieDbContext _context;
         public IActionResult Index()
         {
             IEnumerable<MovieModel> movieModels = _context.Order;

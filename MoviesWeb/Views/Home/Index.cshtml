@@ -26,12 +26,12 @@
     </ul>
 </div>
 
-<div>
+<div class="movie-grid">
     @foreach (var i in Model)
     {
         var imageSource = "/images/movies/" + i.MovieName + ".jpg";
-        <div class="movie-grid">
-            <a style="width:50px"><img src="@imageSource"/></a>
+        <div class="movies-index">
+            <a style="width:50px"><img src="@imageSource" style="height:150px"/></a>
         </div>
     }
 </div>
