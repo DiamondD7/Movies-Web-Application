@@ -274,11 +274,24 @@ body {
     gap:60px;
     margin: 10px 0 10px 0;
 
+    scrollbar-arrow-color:aqua;
+
 }
 
 .h3-title{
     margin-top:200px;
 }
 
-.movies-index::-webkit-scrollbar {
+.movies-index::-webkit-scrollbar{
+    border-radius:50%;
+}
+.movies-index::-webkit-scrollbar-track {
+    background-color: white;
+}
+.movies-index::-webkit-scrollbar-thumb {
+    /*background-color: rgba(0,0,0,0.3); */
+    background-color: rgba(0,0,0,0.3);
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
 }
