@@ -29,9 +29,9 @@
 <div>
     @foreach (var i in Model)
     {
-        var imageSource = "/images/movies/" + 
-        <div>
-            <a><img /></a>
+        var imageSource = "/images/movies/" + i.MovieName + ".jpg";
+        <div class="movie-grid">
+            <a><img src="@imageSource"/></a>
         </div>
     }
 </div>
