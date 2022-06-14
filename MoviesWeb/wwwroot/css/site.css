@@ -245,9 +245,12 @@ body {
 }
 
 /*-----------------------------IMAGE EFFECT WHEN HOVER--------------------------------------------*/
+.img {
+    transition: all 0.5s;
+}
 
 .img:hover{
     height: 50vh;
-    z-index: 5;
-    
+    z-index: 10;
+    transition: all 0.5s;
 }
