@@ -31,7 +31,7 @@
     <div class="movies-index">
         @foreach (TopMovies topMovies in Model.TopMoviesDB)
         {
-            var imageSource = "/images/movies/" + topMovies.MovieName + ".jpg";
+            var imageSource = "/images/Top/" + topMovies.MovieName + ".jpg";
             <a><img src="@imageSource" style="height:30vh" /></a>
         }
     </div>
