@@ -40,9 +40,9 @@
 <div>
     <h3 class="h3-title">Popular on MovieWeb</h3>
     <div class="movies-index">
-        @foreach (TopMovies topMovies in Model.TopMovies)
+        @foreach (Popular pop in Model.Popular)
         {
-            var imageSource = "/images/Top/" + topMovies.MovieName + ".jpg";
+            var imageSource = "/images/Top/" + pop.MovieName + ".jpg";
             <a><img class="imgMovies" src="@imageSource" style="height:30vh" /></a>
         }
     </div>

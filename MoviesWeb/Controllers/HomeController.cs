@@ -13,6 +13,8 @@ namespace MoviesWeb.Controllers
 {
     public class HomeController : Controller
     {
+        public IEnumerable<Popular> popular { get; set; }
+        public IEnumerable<TopMovies> topMovies { get; set; }
 
         private readonly ILogger<HomeController> _logger;
 
@@ -27,12 +29,12 @@ namespace MoviesWeb.Controllers
         {
             /*IEnumerable<MovieModel> movieModels = _context.Order;*/
             topMovies = _context.TopMoviesDB;
+            popular = _context.populars;
             dynamic mymodel = new ExpandoObject();
             mymodel.TopMovies = topMovies;
+            mymodel.Popular = popular;
             return View(mymodel);
         }
-
-        public IEnumerable<TopMovies> topMovies { get; set; }
 
         public IActionResult Privacy()
         {
