@@ -270,7 +270,7 @@ body {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    height: 30vh;
+    height: 33vh;
     gap:60px;
     margin: 10px 0 10px 0;
 
