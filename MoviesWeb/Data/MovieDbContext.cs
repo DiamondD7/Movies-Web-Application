@@ -13,6 +13,7 @@ namespace MoviesWeb.Data
         //connected sql server
         public DbSet<MovieModel> Order { get; set; }
         public DbSet<TopMovies> TopMoviesDB { get; set; }
+        public DbSet<Popular> populars { get; set; }
         public MovieDbContext(DbContextOptions<MovieDbContext>options) : base(options)
         {
 
