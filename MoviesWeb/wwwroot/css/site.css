@@ -276,8 +276,10 @@ body {
 
 }
 
-.h3-title{
-    margin-top:200px;
+.h3-title {
+    margin-top: 210px;
+    font-family: 'DM Sans',sans-serif;
+    color: #3E3D3B;
 }
 
 .movies-index::-webkit-scrollbar{
