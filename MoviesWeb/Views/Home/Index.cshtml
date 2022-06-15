@@ -32,7 +32,7 @@
         @foreach (TopMovies topMovies in Model.TopMovies)
         {
             var imageSource = "/images/Top/" + topMovies.MovieName + ".jpg";
-            <a><img src="@imageSource" style="height:30vh" /></a>
+            <a><img class="imgMovies" src="@imageSource" style="height:30vh" /></a>
         }
     </div>
 </div>
@@ -43,7 +43,7 @@
         @foreach (TopMovies topMovies in Model.TopMovies)
         {
             var imageSource = "/images/Top/" + topMovies.MovieName + ".jpg";
-            <a><img src="@imageSource" style="height:30vh" /></a>
+            <a><img class="imgMovies" src="@imageSource" style="height:30vh" /></a>
         }
     </div>
 </div>
