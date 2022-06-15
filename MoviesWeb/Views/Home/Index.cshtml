@@ -1,5 +1,5 @@
 ﻿
-@model IEnumerable<MovieModel>
+@model dynamic
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -29,10 +29,10 @@
 <div>
     <h3 class="h3-title">Top 10 in New Zealand</h3>
     <div class="movies-index">
-        @foreach (var i in Model)
+        @foreach (TopMovies top in Model.TopMovies)
         {
-            var imageSource = "/images/movies/" + i.MovieName + ".jpg";
-            <a><img src="@imageSource" style="height:30vh"/></a>
+            var imageSource = "/images/movies/" + top.MovieName + ".jpg";
+            <a><img src="@imageSource" style="height:30vh" /></a>
         }
     </div>
 </div>

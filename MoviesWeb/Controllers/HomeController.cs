@@ -5,6 +5,7 @@ using MoviesWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,9 +25,14 @@ namespace MoviesWeb.Controllers
         private readonly MovieDbContext _context;
         public IActionResult Index()
         {
-            IEnumerable<MovieModel> movieModels = _context.Order;
-            return View(movieModels);
+            /*IEnumerable<MovieModel> movieModels = _context.Order;*/
+            topMovies = _context.TopMoviesDB;
+            dynamic mymodel = new ExpandoObject();
+            mymodel.TopMovies = topMovies;
+            return View(mymodel);
         }
+
+        public IEnumerable<TopMovies> topMovies { get; set; }
 
         public IActionResult Privacy()
         {
