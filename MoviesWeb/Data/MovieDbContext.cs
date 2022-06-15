@@ -12,7 +12,7 @@ namespace MoviesWeb.Data
         //adding dbcontext using entityframework
         //connected sql server
         public DbSet<MovieModel> Order { get; set; }
-        public DbSet<TopMovies> TopMovies { get; set; }
+        public DbSet<TopMovies> TopMoviesDB { get; set; }
         public MovieDbContext(DbContextOptions<MovieDbContext>options) : base(options)
         {
 
