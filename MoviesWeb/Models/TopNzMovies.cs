@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace MoviesWeb.Models
 {
-    public class TopMovies
+    public class TopNzMovies
     {
         public int Id { get; set; }
         public int MoviePrice { get; set; }
         public string ReleasedDate { get; set; } = DateTime.Now.ToShortDateString();
         public string MovieName { get; set; }
         public string MovieDescription { get; set; }
-        public string MovieT { get; set; }
+        public string MovieType { get; set; }
     }
 }
