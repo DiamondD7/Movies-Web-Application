@@ -28,7 +28,7 @@ namespace MoviesWeb.Controllers
             /*IEnumerable<MovieModel> movieModels = _context.Order;*/
             topMovies = _context.TopMoviesDB;
             dynamic mymodel = new ExpandoObject();
-            mymodel.TopMoviesDB = topMovies;
+            mymodel.TopMovies = topMovies;
             return View(mymodel);
         }
 

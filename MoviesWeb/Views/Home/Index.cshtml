@@ -29,7 +29,7 @@
 <div>
     <h3 class="h3-title">Top 10 in New Zealand</h3>
     <div class="movies-index">
-        @foreach (TopMovies topMovies in Model.TopMoviesDB)
+        @foreach (TopMovies topMovies in Model.TopMovies)
         {
             var imageSource = "/images/Top/" + topMovies.MovieName + ".jpg";
             <a><img src="@imageSource" style="height:30vh" /></a>
