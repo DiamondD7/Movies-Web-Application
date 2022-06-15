@@ -42,7 +42,7 @@
     <div class="movies-index">
         @foreach (Popular pop in Model.Popular)
         {
-            var imageSource = "/images/Top/" + pop.MovieName + ".jpg";
+            var imageSource = "/images/Popular/" + pop.MovieName + ".jpg";
             <a><img class="imgMovies" src="@imageSource" style="height:30vh" /></a>
         }
     </div>
