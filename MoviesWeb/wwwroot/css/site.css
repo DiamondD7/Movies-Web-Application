@@ -245,15 +245,14 @@ body {
     color: #3E3D3B;
 }
 
-    .Education:hover {
-        border-color: rgba(0,0,0,0.3);
-        cursor: pointer
-    }
-
-    .Education:link, .Education:visited {
-        color: #3E3D3B;
-        text-decoration: none;
-    }
+.Education:hover {
+    border-color: rgba(0,0,0,0.3);
+    cursor: pointer
+}
+.Education:link, .Education:visited {
+    color: #3E3D3B;
+    text-decoration: none;
+}
 
 .Category-Header {
     text-align: center;
@@ -277,7 +276,7 @@ body {
 }
 
 .h3-title {
-    margin-top: 210px;
+    margin-top: 120px;
     font-family: 'DM Sans',sans-serif;
     color: #3E3D3B;
 }
