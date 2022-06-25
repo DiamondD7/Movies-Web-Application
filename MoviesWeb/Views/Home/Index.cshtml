@@ -48,6 +48,17 @@
     </div>
 </div>
 
+<div>
+    <h3 class="h3-title">Popular on MovieWeb</h3>
+    <div class="movies-index">
+        @foreach (MovieModel pop in Model.MovieModel)
+        {
+            var imageSource = "/images/Popular/" + pop.MovieName + ".jpg";
+            <a><img class="imgMovies" src="@imageSource" style="height:30vh" /></a>
+        }
+    </div>
+</div>
+
 
 <div>
     <h1 class="Index-Main-Header">Movie night with your family</h1>

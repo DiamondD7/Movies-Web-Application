@@ -31,9 +31,11 @@ namespace MoviesWeb.Controllers
             /*IEnumerable<MovieModel> movieModels = _context.Order;*/
             topMovies = _context.TopMoviesDB;
             popular = _context.populars;
+            movieModels = _context.Order.Where(x => x.MovieType == "Action");
             dynamic mymodel = new ExpandoObject();
             mymodel.TopMovies = topMovies;
             mymodel.Popular = popular;
+            mymodel.MovieModel = movieModels;
             return View(mymodel);
         }
 
