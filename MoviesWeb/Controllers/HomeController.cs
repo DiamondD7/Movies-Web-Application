@@ -15,6 +15,7 @@ namespace MoviesWeb.Controllers
     {
         public IEnumerable<Popular> popular { get; set; }
         public IEnumerable<TopMovies> topMovies { get; set; }
+        public IEnumerable<MovieModel> movieModels { get; set; }
 
         private readonly ILogger<HomeController> _logger;
 
