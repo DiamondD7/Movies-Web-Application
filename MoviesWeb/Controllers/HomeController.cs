@@ -16,7 +16,6 @@ namespace MoviesWeb.Controllers
         public IEnumerable<Popular> popular { get; set; }
         public IEnumerable<TopMovies> topMovies { get; set; }
         public IEnumerable<MovieModel> movieModels { get; set; }
-
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger, MovieDbContext context)
@@ -28,15 +27,16 @@ namespace MoviesWeb.Controllers
         private readonly MovieDbContext _context;
         public IActionResult Index()
         {
-            /*IEnumerable<MovieModel> movieModels = _context.Order;*/
             topMovies = _context.TopMoviesDB;
             popular = _context.populars;
-            movieModels = _context.Order.Where(x => x.MovieType == "Action");
             dynamic mymodel = new ExpandoObject();
+            movieModels = _context.Order.Where(x => x.MovieType == "Action");
+            mymodel.MovieModel = movieModels;
             mymodel.TopMovies = topMovies;
             mymodel.Popular = popular;
-            mymodel.MovieModel = movieModels;
+
             return View(mymodel);
+
         }
 
         public IActionResult Privacy()
